@@ -18,7 +18,7 @@ Ethereum token standards have evolved over time to address various challenges po
 - _It takes advantage of ERC-1820 to find out whether and where to notify contracts and regular addresses when they receive tokens as well as to allow compatibility with already-deployed contracts._  
 
 2. **Hooks**: It introduced hooks, which are essentially functions that are called during transfer and receipt of tokens. This provides a mechanism to execute custom logic during token transactions.  
-- _Hooks allow streamlining of the sending process and offer a single way to send tokens to any recipient. Thanks to the `tokensReceived hook`, contracts are able to react and prevent locking tokens upon reception._  
+- _Hooks allow streamlining of the sending process and offer a single way to send tokens to any recipient. Thanks to the `tokensReceived hook`, contracts are able to react and prevent loc```king tokens upon reception._  
 
 3. **Simplified Transaction Process**: Unlike ERC20, where you'd have to call `approve()` and then `transferFrom()` for third-party transactions, ERC777 combines these into a single transaction.  
 
@@ -54,10 +54,6 @@ After the problems posed by ERC777, the Ethereum community realized the need for
 2. **Better Developer Experience**: Combining features from ERC20 and ERC777, while eliminating their pitfalls, offers developers a more robust and versatile standard.  
 
 3. **Optimization of Transaction Processes**: With ERC1363, developers can execute more complex operations while minimizing the number of transactions, leading to a better user experience and cost savings.  
-
-### Issues with ERC1363  
-
-Currently, there were no widely known issues or vulnerabilities with ERC1363. However, it's always recommended to stay updated with recent developments and security audits, as the Ethereum ecosystem is continuously evolving.  
 
 ## Conclusion  
 
